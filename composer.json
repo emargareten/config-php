@@ -1,0 +1,40 @@
+{
+    "name": "emargareten/config-php",
+    "description": "Simple config manager for PHP",
+    "keywords": ["config"],
+    "homepage": "https://github.com/emargareten/config-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "emargareten",
+            "homepage": "https://github.com/emargareten",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.1.1",
+        "laravel/pint": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Emargareten\\Config\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Emargareten\\Config\\Test\\": "tests"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
